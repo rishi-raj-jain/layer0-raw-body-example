@@ -1,0 +1,12 @@
+{
+  "name": "layer0-raw-body-example",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "devDependencies": {
+    "@layer0/cli": "^4.15.1",
+    "@layer0/core": "^4.15.1",
+    "@layer0/devtools": "^4.15.1",
+    "@layer0/prefetch": "^4.15.1"
+  }
+}
