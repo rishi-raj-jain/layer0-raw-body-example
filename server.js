@@ -10,7 +10,7 @@ app.use(function (req, res, next) {
     data.push(chunk)
   })
   req.on('end', function () {
-    req.body = Buffer.concat(chunks)
+    req.body = Buffer.concat(data)
     next()
   })
 })
