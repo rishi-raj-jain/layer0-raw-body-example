@@ -20,6 +20,12 @@ app.post('/', function (req, res) {
   res.end()
 })
 
+app.get('/:path*', function (req, res) {
+  console.log('Some debug line.')
+  res.send(`Request to ${req.path}`)
+  res.end()
+})
+
 app.listen(PORT, function (err) {
   if (err) console.log(err)
   console.log('Server listening on PORT', PORT)

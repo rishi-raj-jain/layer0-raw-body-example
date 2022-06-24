@@ -1,6 +1,7 @@
 {
   "name": "layer0-raw-body-example",
   "scripts": {
+    "dev": "node server.js",
     "format": "prettier --write '**/*' --ignore-unknown"
   },
   "devDependencies": {
