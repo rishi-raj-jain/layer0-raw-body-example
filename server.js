@@ -5,14 +5,12 @@ var app = express()
 var PORT = process.env.PORT || 3000
 
 app.use(function (req, res, next) {
-  var data = ''
-  req.setEncoding('utf8')
+  var data = []
   req.on('data', function (chunk) {
-    console.log(chunk)
-    data += chunk
+    data.push(chunk)
   })
   req.on('end', function () {
-    req.body = data
+    req.body = Buffer.concat(chunks)
     next()
   })
 })
