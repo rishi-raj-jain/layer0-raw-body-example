@@ -3,7 +3,7 @@ import { Router } from '@layer0/core'
 export default new Router()
   .post('/compute', ({ compute, send }) => {
     compute((req) => {
-      const { rawBody, body } = request
+      const { rawBody, body } = req
       console.log('rawBody', rawBody)
       console.log('body', body)
 
